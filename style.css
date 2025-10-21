@@ -79,6 +79,30 @@ nav {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
+/* ====== MOBILE NAV OVERLAP fixed ====== */
+@media (max-width: 768px) {
+  .nav-container {
+    width: 90%;
+    padding: 8px 12px;
+    top: 5px;
+  }
+
+  body {
+    padding-top: 120px;
+  }
+}
+
+/* smaller screens (phones) */
+@media (max-width: 480px) {
+  .nav-container {
+    width: 95%;
+    padding: 6px 10px;
+  }
+
+  body {
+    padding-top: 140px; 
+  }
+}
 
 /* ========== end of navigation bar ========== */
 
@@ -427,4 +451,5 @@ nav {
     .howhow {
         font-size: 13px;
     }
+
 }
