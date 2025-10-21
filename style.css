@@ -1,0 +1,430 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    background-image: url(images/ddf1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ========== SMALLER NAVIGATION BAR 
+
+background-color: rgba(17, 17, 17, 1);
+    background: linear-gradient(95deg, rgba(17, 17, 17, 1) 0%, rgba(19, 28, 30, 1) 100%);
+========== */
+.nav-container {
+    background: rgba(40, 40, 40, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 60%;
+    margin: 15px auto;
+    border-radius: 20px;
+    padding: 6px 16px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.mytxtlogo {
+    color: rgb(218, 218, 218);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.mytxtlogo:hover {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* ========== end of navigation bar ========== */
+
+
+/* ========== MAIN CONTENT ========== */
+.abtme {
+    text-align: left;
+    color: gray;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 100px;
+    font-size: 32px;
+}
+
+.btnMYSKL {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(17, 17, 17, 1);
+    background: linear-gradient(95deg, rgb(18, 27, 32) 0%, rgb(4, 28, 34) 100%);
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.btnMYSKL a {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+    transition: color 0.5s ease;
+}
+
+.btnMYSKL a:hover {
+    color: white;
+}
+
+.intro {
+    color: rgb(201, 198, 198);
+    margin-bottom: 5px;
+}
+
+.intro-plan {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(167, 167, 167);
+}
+
+.msp {
+    padding: 10px;
+    cursor: progress;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(105, 105, 105);
+    font-weight: normal;
+    transition: color 0.3s;
+    padding-bottom: 40px;
+}
+
+.msp:hover {
+    color: white;
+}
+
+/* ========== PROJECTS SECTION ========== */
+.projects {
+    display: flex;
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 32px;
+    margin: 30px;
+}
+
+.my-projects {
+    background: linear-gradient(95deg, rgba(0, 0, 0, 1) 0%, rgba(0, 29, 35, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 20px;
+    width: 350px;
+    max-width: 90%;
+    transition: transform 0.3s ease;
+}
+
+.my-projects:hover {
+    transform: translateY(-5px);
+}
+
+.imgproj {
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.howhow {
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* ========== HOBBIES SECTION ========== */
+.hobby-section h3 {
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(105, 105, 105);
+    font-weight: normal;
+    transition: color 0.3s;
+    padding-bottom: 40px;
+
+
+}
+
+.hobby-section h3:hover {
+    color: white;
+}
+
+/* ========== HOBBIES DESCRIPTION ========== */
+.hbdesc {
+    color: white;
+    font-weight: normal;
+    font-size: 1em;
+    padding: 32px;
+    background-color: rgba(17, 17, 17, 1);
+    background: linear-gradient(95deg, rgb(18, 27, 32) 0%, rgb(4, 28, 34) 100%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: transform 0.3s ease;
+}
+
+.hbdesc:hover {
+    transform: scale(1.02);
+
+}
+
+/* ========== CONTACT ========== */
+.footer {
+    background: #020024;
+    background: linear-gradient(90deg, rgb(2, 1, 5) 0%, rgba(3, 63, 82, 1) 100%);
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #1B69EE;
+    font-weight: bold;
+}
+
+/* ========== SKILL BARS ========== */
+
+.myskillbar-container {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.myskillbar-container p {
+    display: inline-block;
+    background-image: linear-gradient(to right, #243949 0%, #051d31 100%);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(206, 205, 205);
+    font-weight: normal;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.myskillbar-container p:hover {
+    color: white;
+}
+
+.skill-container {
+    width: 350px;
+    margin: 30px auto;
+    color: #1B69EE;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease;
+}
+
+.skill-container:hover {
+    transform: scale(1.02);
+}
+
+.skill {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.skill-name {
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin: 5px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.progress.html {
+    text-align: right;
+    padding: 2px;
+    color: white;
+    width: 65%;
+    border-radius: 10px;
+    background-color: orangered;
+}
+
+.progress.css {
+    text-align: right;
+    padding: 2px;
+    color: white;
+    background-color: #145edd;
+    border-radius: 20px;
+    width: 55%;
+}
+
+.progress.pcbuilding {
+    text-align: right;
+    padding: 2px;
+    color: white;
+    width: 75%;
+    border-radius: 15px;
+    background-color: #05721d;
+}
+
+.progress.gaming {
+    text-align: right;
+    padding: 2px;
+    color: white;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #c92096;
+}
+
+/* ========== END OF SKILL BARS ========== */
+
+/* ========== RESPONSIVENESS ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .nav-container {
+        width: 80%;
+    }
+
+    .abtme {
+        text-align: center;
+    }
+
+    .my-projects {
+        width: 300px;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .nav-container {
+        width: 85%;
+        border-radius: 15px;
+        padding: 6px 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 5px 7px;
+    }
+
+    .abtme {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .intro-plan {
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-projects {
+        width: 90%;
+    }
+
+    .imgproj {
+        width: 100%;
+    }
+
+    .howhow {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    .nav-container {
+        width: 95%;
+        border-radius: 20px;
+        padding: 8px;
+    }
+
+    .mytxtlogo {
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    .abtme {
+        font-size: 20px;
+    }
+
+    .msp,
+    .hobbies h3 {
+        font-size: 14px;
+    }
+
+    .howhow {
+        font-size: 13px;
+    }
+}
