@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AurielSite</title>
+    <title>AurielFritz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
 </head>
 
 <body>
-
+    <a href="#home"></a>
     <header>
         <div class="nav-container">
             <nav>
-                <a href="#index" class="mytxtlogo">LemonRyzen</a>
+                <a href="#index" class="mytxtlogo" id="home">LemonRyzen</a>
                 <div class="nav-links">
                     <a href="#Hobbies">Hobbies</a>
                     <a href="#Contact">Contact</a>
@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <section class="abtme" id="index">
+    <section class="abtme" id="home">
         <h3 class="intro">Hello! - My name is Auriel Fritz</h3>
         <p class="intro-plan">My plan is to master HTML and CSS, then learn JavaScript...</p>
     </section>
@@ -41,7 +41,7 @@
     <!--Hobbies Section-->
     <section class="hobby-section" id="Hobbies">
         <h3>MY HOBBIES</h3>
-        <article class="hobbies">
+        <article class="hobbies" >
             <p class="hbdesc">
                 I’m really into computers 💻 and love learning how they work. I enjoy building and customizing my own PC
                 to
@@ -79,6 +79,12 @@
             <img src="images/2me.png" alt="aboutmeweb" class="imgproj">
             <p class="howhow">My 1st practice website idk if this website is responsive</p>
         </article>
+
+        <article class="my-projects">
+            <img src="images/netflixport.png" alt="mynetflixclone" class="imgproj">
+            <p class="howhow">Trying to clone netflix btw this is WORKING IN PROGRESS BTW</p>
+        </article>
+
     </section>
     <!--MY SKILL BARS-->
 
@@ -90,7 +96,7 @@
     <div class="skill-container" id="myskills">
         <div class="skill">
             <div class="skill-name">
-                <span>HTML</span>
+                <span class="html">HTML</span>
             </div>
             <div class="progress-bar">
                 <div class="progress html">
@@ -101,7 +107,7 @@
 
         <div class="skill">
             <div class="skill-name">
-                <span>CSS</span>
+                <span class="CSS">CSS</span>
             </div>
             <div class="progress-bar">
                 <div class="progress css">
@@ -112,7 +118,7 @@
 
         <div class="skill">
             <div class="skill-name">
-                <span>PC BUILDING</span>
+                <span class="pcb">PC BUILDING</span>
             </div>
             <div class="progress-bar">
                 <div class="progress pcbuilding">75%</div>
@@ -121,7 +127,7 @@
 
         <div class="skill">
             <div class="skill-name">
-                <span>GAMING</span>
+                <span class="gamming">GAMING</span>
             </div>
             <div class="progress-bar">
                 <div class="progress gaming">80%</div>
@@ -139,6 +145,5 @@
         <p>Thanks for stopping by!</p>
     </footer>
 </body>
-
 
 </html>
