@@ -1,40 +1,41 @@
+/* ========== GLOBAL STYLES ========== */
 html {
-   scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     margin: 0;
-    background-image: url(images/ddf1.jpg);
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background: radial-gradient(circle, rgba(124, 58, 237, 1) 0%, rgba(30, 41, 59, 1) 100%);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 * {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* ========== SMALLER NAVIGATION BAR 
-
-background-color: rgba(17, 17, 17, 1);
-    background: linear-gradient(95deg, rgba(17, 17, 17, 1) 0%, rgba(19, 28, 30, 1) 100%);
-========== */
+/* ========== SMALLER NAVIGATION BAR background-color: rgba(17, 17, 17, 1); background: linear-gradient(95deg, rgba(17, 17, 17, 1) 0%, rgba(19, 28, 30, 1) 100%); ========== */
 .nav-container {
-    background: rgba(40, 40, 40, 0.5);
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.493) 0%, rgba(30, 41, 59, 0.507) 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    width: 60%;
     margin: 15px auto;
     border-radius: 20px;
     padding: 6px 16px;
     position: fixed;
-    top: 10px;
+    width: 60%;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -52,15 +53,16 @@ nav {
 }
 
 .mytxtlogo {
-    color: orange;
+    color: white;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.6s ease-in-out;
+
 }
 
 .mytxtlogo:hover {
-    color: white;
+    color: rgba(148, 106, 221, 0.514);
 }
 
 .nav-links {
@@ -74,45 +76,43 @@ nav {
     padding: 4px 8px;
     font-size: 0.9rem;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 18px;
 }
 
 .nav-links a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
-/* ====== MOBILE NAV OVERLAP fixed ====== */
-@media (max-width: 768px) {
-  .nav-container {
-    width: 90%;
-    padding: 8px 12px;
-    top: 5px;
-  }
 
-  body {
-    padding-top: 120px;
-  }
+/* ====== MOBILE NAV OVERLAP FIX ====== */
+@media (max-width: 768px) {
+    .nav-container {
+        width: 90%;
+        padding: 8px 12px;
+        top: 5px;
+    }
+
+    body {
+        padding-top: 120px;
+    }
 }
 
-/* smaller screens (phones) */
-@media (max-width: 480px) {
-  .nav-container {
-    width: 95%;
-    padding: 6px 10px;
-  }
 
-  body {
-    padding-top: 140px; 
-  }
+@media (max-width: 480px) {
+    .nav-container {
+        width: 95%;
+        padding: 6px 10px;
+    }
+
+    body {
+        padding-top: 140px;
+    }
 }
 
 /* ========== end of navigation bar ========== */
-
-
 /* ========== MAIN CONTENT ========== */
 .abtme {
     text-align: left;
-    color: gray;
     padding: 10px;
     margin: 10px;
     margin-top: 100px;
@@ -122,20 +122,23 @@ nav {
 .btnMYSKL {
     padding: 10px;
     margin: 10px;
-    background-color: rgba(17, 17, 17, 1);
-    background: linear-gradient(95deg, rgb(18, 27, 32) 0%, rgb(4, 28, 34) 100%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.466) 0%, rgba(30, 41, 59, 0.466) 100%);
+    margin-right: auto;
+    margin-left: auto;
     width: fit-content;
     border-radius: 8px;
+    justify-content: center;
+    text-align: center;
 }
 
 .btnMYSKL a {
     text-decoration: none;
     color: rgb(202, 202, 202);
-    transition: color 0.5s ease;
+    transition: transform 0.6s ease;
 }
 
-.btnMYSKL a:hover {
-    color: white;
+.btnMYSKL:hover {
+    transform: scale(1.05);
 }
 
 .intro {
@@ -154,7 +157,7 @@ nav {
     cursor: progress;
     text-align: center;
     margin-top: 100px;
-    color: rgb(105, 105, 105);
+    color: rgb(201, 199, 199);
     font-weight: normal;
     transition: color 0.3s;
     padding-bottom: 40px;
@@ -177,7 +180,7 @@ nav {
 }
 
 .my-projects {
-    background: linear-gradient(95deg, rgba(0, 0, 0, 1) 0%, rgba(0, 29, 35, 1) 100%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 1) 0%, rgba(30, 41, 59, 1) 100%);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     border-radius: 20px;
     width: 350px;
@@ -204,18 +207,19 @@ nav {
     padding: 20px;
     text-align: justify;
 }
-
+.netflixclone{
+    width: 150px;
+    height: 150px;
+}
 /* ========== HOBBIES SECTION ========== */
 .hobby-section h3 {
     padding: 10px;
     text-align: center;
     margin-top: 100px;
-    color: rgb(105, 105, 105);
+    color: rgb(212, 211, 211);
     font-weight: normal;
     transition: color 0.3s;
     padding-bottom: 40px;
-
-
 }
 
 .hobby-section h3:hover {
@@ -228,22 +232,19 @@ nav {
     font-weight: normal;
     font-size: 1em;
     padding: 32px;
-    background-color: rgba(17, 17, 17, 1);
-    background: linear-gradient(95deg, rgb(18, 27, 32) 0%, rgb(4, 28, 34) 100%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 1) 0%, rgba(30, 41, 59, 1) 100%);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 
 .hbdesc:hover {
-    transform: scale(1.02);
-
+    transform: scale(1.05);
 }
 
 /* ========== CONTACT ========== */
 .footer {
-    background: #020024;
-    background: linear-gradient(90deg, rgb(2, 1, 5) 0%, rgba(3, 63, 82, 1) 100%);
+    background: linear-gradient(to right, #17294285, #1e3b8a80);
     text-align: center;
     color: white;
     font-weight: normal;
@@ -252,12 +253,11 @@ nav {
 
 .contact-link {
     text-decoration: none;
-    color: #1B69EE;
+    color: #0059ff;
     font-weight: bold;
 }
 
 /* ========== SKILL BARS ========== */
-
 .myskillbar-container {
     text-align: center;
     margin-top: 100px;
@@ -266,14 +266,14 @@ nav {
 
 .myskillbar-container p {
     display: inline-block;
-    background-image: linear-gradient(to right, #243949 0%, #051d31 100%);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    border-radius: 20px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.466) 0%, rgba(30, 41, 59, 0.466) 100%);
+    border-radius: 8px;
     font-size: 18px;
-    color: rgb(206, 205, 205);
+    color: rgb(224, 223, 223);
     font-weight: normal;
-    padding: 5px;
+    padding: 10px;
     transition: color 0.3s;
+    cursor: pointer;
 }
 
 .myskillbar-container p:hover {
@@ -283,8 +283,7 @@ nav {
 .skill-container {
     width: 350px;
     margin: 30px auto;
-    color: #1B69EE;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #ECE9E6, #FFFFFF);
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -308,9 +307,10 @@ nav {
     font-weight: bold;
     margin: 5px;
 }
+
 .progress-bar {
     width: 100%;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(216, 216, 216);
     border-radius: 20px;
     max-width: 100%;
 }
@@ -324,6 +324,10 @@ nav {
     background-color: orangered;
 }
 
+.html {
+    color: orangered;
+}
+
 .progress.css {
     text-align: right;
     padding: 2px;
@@ -333,13 +337,21 @@ nav {
     width: 55%;
 }
 
+.CSS {
+    color: #0059ff;
+}
+
 .progress.pcbuilding {
     text-align: right;
     padding: 2px;
     color: white;
     width: 75%;
     border-radius: 15px;
-    background-color: #05721d;
+    background-color: #b10202;
+}
+
+.pcb {
+    color: #b10202;
 }
 
 .progress.gaming {
@@ -348,13 +360,15 @@ nav {
     color: white;
     width: 80%;
     border-radius: 15px;
-    background-color: #c92096;
+    background-color: yellowgreen
+}
+
+.gamming {
+    color: yellowgreen;
 }
 
 /* ========== END OF SKILL BARS ========== */
-
 /* ========== RESPONSIVENESS ========== */
-
 /* Tablets */
 @media (max-width: 1024px) {
     .nav-container {
@@ -453,7 +467,4 @@ nav {
     .howhow {
         font-size: 13px;
     }
-
 }
-
-
